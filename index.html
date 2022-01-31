@@ -5,29 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Belly Button Biodiversity</title>
-  <link 
-    rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link 
-  rel ="stylesheet" 
-  href="static/css/style.css">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body>
+<body style="background-color:antiquewhite">
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h1 style="color:darkblue" style ="text-transform: uppercase;">BELLY BUTTON BIODIVERSITY DASHBOARD</h1>
+        <h3 style="color:darkblue";>Use the interactive charts below to explore the dataset<h3>
       </div>
     </div>
-    
+    <div class = "row">
+      <div class = "col-md-10">
+      <div class="well">
+        <h5 style="text-align:center" style="color: black;"><b>Food for Thought</b></h5>
+        <p>The microbes living in navels are part of their hosts’ microbiome — the community of microscopic organisms such as bacteria, viruses and fungi that live on and in all animals and plants. Some types of microbes can cause illness. Many can help protect the body from other, nasty bacteria. Each volunteer carries a variety of bacterial species in his or her belly button. Below is information on the number of bacteria found for each species in the navel. If Improbable Beef is looking for people who carry a large number of a certain bacterial species, each volunteer should be able to quickly use the dashboard to figure out whether they are eligible to sell their bacteria to the Improbable Beef.</p><br>
+
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-2">
-          <div class="well">
-          <h5>Test Subject ID No.:</h5>
+        <div class="well">
+          <h5 style="color: black">Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -37,7 +41,6 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      
       <div class="col-md-5">
         <div id="bar"></div>
       </div>
@@ -54,8 +57,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./JS/charts.js"></script>
-
+  <script src="static/js/charts.js"></script>
 
 </body>
 

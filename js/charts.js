@@ -95,7 +95,7 @@ function buildCharts(sample) {
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
 
-
+     /*
     // Deliveralbe 2
     // 
     // 1. Create the trace for the bubble chart.
@@ -120,6 +120,6 @@ function buildCharts(sample) {
   };
 
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot("bubble", bubbleData, bubbleLayout)
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout) */
   });
 }
